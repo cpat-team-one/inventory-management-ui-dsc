@@ -23,12 +23,11 @@ service:
 ingress:
   enabled: true
   appid:
-    enabled: false
-    # web or app - https://cloud.ibm.com/docs/services/appid?topic=appid-kube-auth
+    enabled: true
     requestType: web
-    binding:
-      name: ""
-      namespace: ""
+    binding: 
+      name: "binding-mooc-cpat-ocp01-appid"
+      namespace: tools
 
 #  host: hello
   namespaceInHost: true
